@@ -1,0 +1,61 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>saml-ssocircle-acs-post-handler</servlet-name>
+        <servlet-class>com.samlssocircle.demo.SAMLACSHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>saml-ssocircle-acs-post-handler</servlet-name>
+        <url-pattern>/saml-ssocircle-acs</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>saml-ssocircle-slo-handler</servlet-name>
+        <servlet-class>com.samlssocircle.demo.SAMLSLOHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>saml-ssocircle-slo-handler</servlet-name>
+        <url-pattern>/saml-ssocircle-slo</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>saml-ssocircle-meta-data-handler</servlet-name>
+        <servlet-class>com.samlssocircle.demo.MetaDataHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>saml-ssocircle-meta-data-handler</servlet-name>
+        <url-pattern>/saml-ssocircle-metadata</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>saml-ssocircle-login-handler</servlet-name>
+        <servlet-class>com.samlssocircle.demo.LoginHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>saml-ssocircle-login-handler</servlet-name>
+        <url-pattern>/saml-ssocircle-login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>saml-ssocircle-logout-handler</servlet-name>
+        <servlet-class>com.samlssocircle.demo.LogoutHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>saml-ssocircle-logout-handler</servlet-name>
+        <url-pattern>/saml-ssocircle-logout</url-pattern>
+    </servlet-mapping>
+
+</web-app>
